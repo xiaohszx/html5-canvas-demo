@@ -10,7 +10,7 @@
         <router-link :to="{ name: 'Index' }">Return</router-link>
       </li>
     </ul>
-    <router-view class="chapter-three"></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
