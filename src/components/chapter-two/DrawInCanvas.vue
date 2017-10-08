@@ -160,6 +160,7 @@
 
         ctx.globalCompositeOperation = 'source-atop'
         ctx.fillRect(75, 275, 50, 50)
+
         ctx.save()
       },
       draw27 (ctx) {
@@ -295,12 +296,27 @@
       draw210 (ctx) {
         // 矩形阴影
         ctx.setTransform(1, 0, 0, 1, 0, 0)
+        ctx.globalAlpha = 1
+
         ctx.fillStyle = '#2af598'
         ctx.shadowOffsetX = -4
         ctx.shadowOffsetY = -4
         ctx.shadowColor = 'black'
         ctx.shadowBlur = 4
         ctx.fillRect(450, 450, 100, 100)
+
+        ctx.shadowOffsetX = 10
+        ctx.shadowOffsetY = 10
+        ctx.shadowColor = '#fa709a'
+        ctx.shadowBlur = 8
+        ctx.fillRect(650, 450, 100, 100)
+
+        // 重置画布
+        ctx.shadowColor= '#707070'
+        ctx.shadowOffsetX = 0
+        ctx.shadowOffsetY = 0
+        ctx.shadowBlur = 0
+
         ctx.save()
       }
     },
