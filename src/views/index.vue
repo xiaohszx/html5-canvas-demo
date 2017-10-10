@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="../assets/logo.png">
+    <img class="canvas-logo" src="../assets/html5_canvas_logo.png">
     <h1>{{ msg }}</h1>
     <h2>Chapter Links</h2>
     <ul>
@@ -60,5 +60,9 @@ li {
 
 a {
   color: #42b983;
+}
+
+.canvas-logo {
+  width: 200px;
 }
 </style>
