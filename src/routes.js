@@ -27,6 +27,10 @@ export default [
         path: 'draw-in-canvas',
         name: 'DrawInCanvas',
         component: (resolve) => require(['./components/chapter-two/DrawInCanvas.vue'], resolve),
+      }, {
+        path: 'rectangle',
+        name: 'Rectangle',
+        component: (resolve) => require(['./components/chapter-two/Rectangle.vue'], resolve),
       }
     ]
   },{

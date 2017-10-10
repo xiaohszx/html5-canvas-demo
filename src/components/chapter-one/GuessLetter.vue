@@ -64,10 +64,10 @@
         }
       },
       canvasApp () {
-        var theCanvas = document.getElementById("letters")
+        const theCanvas = document.getElementById("letters")
         if (!theCanvas || !theCanvas.getContext) return
 
-        var ctx = theCanvas.getContext("2d")
+        const ctx = theCanvas.getContext("2d")
         console.log("Drawing Canvas")
 
         const initGame = (ctx) => {

@@ -7,6 +7,9 @@
         <router-link :to="{ name: 'DrawInCanvas' }">DrawInCanvas</router-link>
       </li>
       <li>
+        <router-link :to="{ name: 'Rectangle' }">Rectangle</router-link>
+      </li>
+      <li>
         <router-link :to="{ name: 'Index' }">Return</router-link>
       </li>
     </ul>

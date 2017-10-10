@@ -11,15 +11,15 @@
     name: 'HelloWorld',
     data () {
       return {
-        
+
       }
     },
     methods: {
       canvasApp () {
-        var theCanvas = document.getElementById("canvasOne");
+        const theCanvas = document.getElementById("canvasOne");
         console.log(theCanvas)
         if (!theCanvas || !theCanvas.getContext) return;
-        var context = theCanvas.getContext("2d");
+        const context = theCanvas.getContext("2d");
         console.log("Drawing Canvas")
 
         function drawScreen () {
@@ -42,5 +42,5 @@
 </script>
 
 <style>
-  
+
 </style>

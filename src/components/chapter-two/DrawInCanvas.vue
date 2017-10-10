@@ -8,7 +8,7 @@
 
 <script>
   export default {
-    name: 'Demo2',
+    name: 'DrawOnCanvas',
     data () {
       return {
 
@@ -16,9 +16,9 @@
     },
     methods: {
       canvasApp () {
-        var theCanvas = document.getElementById("canvasTwo")
+        const theCanvas = document.getElementById("canvasTwo")
         if (!theCanvas || !theCanvas.getContext) return
-        var ctx = theCanvas.getContext("2d")
+        const ctx = theCanvas.getContext("2d")
         this.drawBg(ctx)
         this.draw22(ctx)
         this.draw24(ctx)

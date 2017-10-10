@@ -213,7 +213,6 @@ export default {
       ctx.shadowBlur = this.shadowBlur
       ctx.globalAlpha = this.textAlpha
 
-
       switch (this.fillOrStroke) {
         case 'fill':
           ctx.fillStyle = this.fontColor.hex
